@@ -3,15 +3,15 @@
 <suite name="Failed suite [BatchTestingSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="BatchTesting(failed)">
     <classes>
-      <class name="ecomSwaglabsHamburgerMenu.Hamberger_TestCase">
+      <class name="ecomSwaglabsCart.Cart_TestCase">
         <methods>
           <include name="closeBrowser"/>
           <include name="dbConnection"/>
-          <include name="verifyResetAppStateRemovesProduct"/>
+          <include name="verifyRemoveAfterReturningToCart"/>
           <include name="navigateTOApp"/>
           <include name="bt"/>
         </methods>
-      </class> <!-- ecomSwaglabsHamburgerMenu.Hamberger_TestCase -->
+      </class> <!-- ecomSwaglabsCart.Cart_TestCase -->
     </classes>
   </test> <!-- BatchTesting(failed) -->
 </suite> <!-- Failed suite [BatchTestingSuite] -->
