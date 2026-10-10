@@ -1,0 +1,912 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>91/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 10 11:02:05 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>811 seconds (811507 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState()'><b>verifyCartLogoBoundaryState</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method isCartBadgePresent(ProductPage) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState(Product_TestCase.java:310)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace816288886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace816288886'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method isCartBadgePresent(ProductPage) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState(Product_TestCase.java:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyFilterDropdownSmokeTest()'><b>verifyFilterDropdownSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method getSortedProductNames(List&lt;String&gt;) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyFilterDropdownSmokeTest(Product_TestCase.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526894424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526894424'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method getSortedProductNames(List&lt;String&gt;) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyFilterDropdownSmokeTest(Product_TestCase.java:172)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState()'><b>verifyCartLogoBoundaryState</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method isCartBadgePresent(ProductPage) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState(Product_TestCase.java:310)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2028160153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2028160153'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method isCartBadgePresent(ProductPage) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState(Product_TestCase.java:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState()'><b>verifyCartLogoBoundaryState</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method isCartBadgePresent(ProductPage) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState(Product_TestCase.java:310)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1467853846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1467853846'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method isCartBadgePresent(ProductPage) is undefined for the type Product_TestCase
+
+	at ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState(Product_TestCase.java:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutCompleteAndBackHome()'><b>verifyCheckoutCompleteAndBackHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyLogoutNavigatesToLoginPage()'><b>verifyLogoutNavigatesToLoginPage</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutOverview()'><b>verifyCheckoutOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyHamburgerNotAccessibleAfterLogout()'><b>verifyHamburgerNotAccessibleAfterLogout</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutBoundaryValues()'><b>verifyCheckoutBoundaryValues</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Tom, Mouseeeeeeeeeeeeeeeeeeeee, 560001</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyRemovedProductNotPresent()'><b>verifyRemovedProductNotPresent</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1996346865" onClick='toggleBox("Output-1996346865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1996346865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1996346865">
+TC-CART-05 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyInvalidPostalCode()'><b>verifyInvalidPostalCode</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, </td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: wrong_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>8</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductVisibilityAfterSorting()'><b>verifyProductVisibilityAfterSorting</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br/>
+<a href="#Output-1069568462" onClick='toggleBox("Output-1069568462", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1069568462" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1069568462">
+All sorting options verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyHamburgerMenuOptionsDisplayed()'><b>verifyHamburgerMenuOptionsDisplayed</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductPageToCartPage()'><b>verifyProductPageToCartPage</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-2066777507" onClick='toggleBox("Output-2066777507", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2066777507" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2066777507">
+Product successfully navigated to Cart: Sauce Labs Bike Light<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyRemoveAfterReturningToCart()'><b>verifyRemoveAfterReturningToCart</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1891878359" onClick='toggleBox("Output-1891878359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1891878359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1891878359">
+TC-CART-09 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductPageToCartPage()'><b>verifyProductPageToCartPage</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-573972003" onClick='toggleBox("Output-573972003", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-573972003" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-573972003">
+Product successfully navigated to Cart: Test.allTheThings() T-Shirt (Red)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>7</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterChangingFilter()'><b>verifyAddToCartAfterChangingFilter</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-1191890972" onClick='toggleBox("Output-1191890972", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1191890972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1191890972">
+Product added successfully after changing filter<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, secret_sauce</td>
+<td></td>
+<td>13</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.resetAppStateSmokeTest()'><b>resetAppStateSmokeTest</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>4</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.completeHamburgerMenuWorkflow()'><b>completeHamburgerMenuWorkflow</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>8</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.productPageSmokeTest()'><b>productPageSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-767266208" onClick='toggleBox("Output-767266208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-767266208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-767266208">
+Product Page smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.hamburgerMenuSmokeTest()'><b>hamburgerMenuSmokeTest</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.checkoutRegressionFlow()'><b>checkoutRegressionFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.completeSystemPurchaseFlow()'><b>completeSystemPurchaseFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>4</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyValidCheckoutInformation()'><b>verifyValidCheckoutInformation</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterProductRemoval()'><b>verifyAddToCartAfterProductRemoval</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-815677236" onClick='toggleBox("Output-815677236", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-815677236" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-815677236">
+Product successfully added again after removal<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.checkoutRegressionFlow()'><b>checkoutRegressionFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>7</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.blankLoginTest()'><b>blankLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, </td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAppStateWithEmptyCart()'><b>verifyResetAppStateWithEmptyCart</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>5</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutCompleteAndBackHome()'><b>verifyCheckoutCompleteAndBackHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterChangingFilter()'><b>verifyAddToCartAfterChangingFilter</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-1370558854" onClick='toggleBox("Output-1370558854", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1370558854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1370558854">
+Product added successfully after changing filter<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyValidCheckoutInformation()'><b>verifyValidCheckoutInformation</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginControlsDisplayed()'><b>verifyLoginControlsDisplayed</b><br>Test class: ecomSwaglabsLogin.Login_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartControls()'><b>verifyCartControls</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-359494998" onClick='toggleBox("Output-359494998", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-359494998" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-359494998">
+TC-CART-02 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutOverview()'><b>verifyCheckoutOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: wrong_user, wrong_password</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyBlankFirstName()'><b>verifyBlankFirstName</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: , Duck, 560001</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyOverviewToComplete()'><b>verifyOverviewToComplete</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAndCartLogo()'><b>verifyAddToCartAndCartLogo</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-1730399463" onClick='toggleBox("Output-1730399463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1730399463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1730399463">
+Product added successfully: Test.allTheThings() T-Shirt (Red)<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutInformationToOverview()'><b>verifyCheckoutInformationToOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyEmptyCart()'><b>verifyEmptyCart</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-560752677" onClick='toggleBox("Output-560752677", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-560752677" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-560752677">
+TC-CART-04 Passed - Empty cart verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductsAreVisible()'><b>verifyProductsAreVisible</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br/>
+<a href="#Output-1872627924" onClick='toggleBox("Output-1872627924", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1872627924" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1872627924">
+Products, names and prices are displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyBlankLastName()'><b>verifyBlankLastName</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Tom, , 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAndCartLogo()'><b>verifyAddToCartAndCartLogo</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-1825485441" onClick='toggleBox("Output-1825485441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1825485441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1825485441">
+Product added successfully: Sauce Labs Bike Light<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyEmptyCartNavigation()'><b>verifyEmptyCartNavigation</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br/>
+<a href="#Output-21779075" onClick='toggleBox("Output-21779075", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21779075" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21779075">
+Empty cart handled successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.productPageSmokeTest()'><b>productPageSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-886517510" onClick='toggleBox("Output-886517510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-886517510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-886517510">
+Product Page smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAppStateRemovesProduct()'><b>verifyResetAppStateRemovesProduct</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>4</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartQuantityBoundary()'><b>verifyCartQuantityBoundary</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1205558159" onClick='toggleBox("Output-1205558159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1205558159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1205558159">
+TC-CART-10 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.blankLoginTest()'><b>blankLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: , secret_sauce</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAndCartLogo()'><b>verifyAddToCartAndCartLogo</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-1663189493" onClick='toggleBox("Output-1663189493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1663189493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1663189493">
+Product added successfully: Sauce Labs Backpack<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.cartSmokeTest()'><b>cartSmokeTest</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1588227958" onClick='toggleBox("Output-1588227958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1588227958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1588227958">
+TC-CART-06 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.completeSystemPurchaseFlow()'><b>completeSystemPurchaseFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>8</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyOverviewToComplete()'><b>verifyOverviewToComplete</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutInformationToOverview()'><b>verifyCheckoutInformationToOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAppStateBoundaryStates()'><b>verifyResetAppStateBoundaryStates</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAfterCartStateTransitions()'><b>verifyResetAfterCartStateTransitions</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>8</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, wrong_password</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-271044045" onClick='toggleBox("Output-271044045", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-271044045" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-271044045">
+TC-CART-07 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCompleteToHome()'><b>verifyCompleteToHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>4</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyLogoutAfterProductAndCartNavigation()'><b>verifyLogoutAfterProductAndCartNavigation</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@49438269</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.productPageSmokeTest()'><b>productPageSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-1088119094" onClick='toggleBox("Output-1088119094", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1088119094" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1088119094">
+Product Page smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, a</td>
+<td></td>
+<td>13</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>13</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductPageToCartPage()'><b>verifyProductPageToCartPage</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-471395945" onClick='toggleBox("Output-471395945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-471395945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-471395945">
+Product successfully navigated to Cart: Sauce Labs Backpack<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterProductRemoval()'><b>verifyAddToCartAfterProductRemoval</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-1353941826" onClick='toggleBox("Output-1353941826", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1353941826" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1353941826">
+Product successfully added again after removal<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterChangingFilter()'><b>verifyAddToCartAfterChangingFilter</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-219771880" onClick='toggleBox("Output-219771880", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-219771880" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-219771880">
+Product added successfully after changing filter<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterProductRemoval()'><b>verifyAddToCartAfterProductRemoval</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-1631826609" onClick='toggleBox("Output-1631826609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1631826609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1631826609">
+Product successfully added again after removal<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsproducts.Product_TestCase@5dda768f</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutBoundaryValues()'><b>verifyCheckoutBoundaryValues</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickeyyyyyyyyyyyyyyyyyyyyy, Mouse, 560001</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutInformationFields()'><b>verifyCheckoutInformationFields</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartToCheckout()'><b>verifyCartToCheckout</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1008774102" onClick='toggleBox("Output-1008774102", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1008774102" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1008774102">
+TC-CART-03 Passed - Checkout page opened<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCompleteToHome()'><b>verifyCompleteToHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>4</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@2aceadd4</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: a, secret_sauce</td>
+<td></td>
+<td>13</td>
+<td>ecomSwaglabsLogin.Login_TestCase@24aed80c</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyAddedProductVisibleInCart()'><b>verifyAddedProductVisibleInCart</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1287976637" onClick='toggleBox("Output-1287976637", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1287976637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1287976637">
+TC-CART-01 Passed - Product is visible in Cart<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartContentsAfterReturning()'><b>verifyCartContentsAfterReturning</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-804105878" onClick='toggleBox("Output-804105878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-804105878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-804105878">
+TC-CART-08 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsCart.Cart_TestCase@7a8c8dcf</td></tr>
+</table><p>
+</body>
+</html>
